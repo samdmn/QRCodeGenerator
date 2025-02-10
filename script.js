@@ -6,6 +6,12 @@ const imagezone = document.getElementById("image-zone")
 // Function used to generate a QRCode thanks to goqr.me/api/
 function generate(){
     var text = inputbox.value;
+    var children = imagezone.childNodes;
+    for (var i = 0; i < children.length; i++) {
+        if (children[i].tagName === "IMG") {
+            return;
+        }
+    }    
     if (text === ""){
         return;
     }
