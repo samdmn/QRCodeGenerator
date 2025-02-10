@@ -42,15 +42,30 @@
     max-width: 400px;
     height: 30px;
     text-indent: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 #generate-button {
+    width: 32px;
     height: 30px;
     margin-left: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#generate-button:hover {
+    background-color: lightgrey;
+    cursor: pointer;
 }
 
 .qrcode {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.qrcode img:hover {
+    cursor: pointer;
 }

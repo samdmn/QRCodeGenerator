@@ -16,9 +16,13 @@ function generate(){
         return;
     }
     else {
+        var link = document.createElement("a");
         var image = document.createElement("img");
         image.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + text;
-        imagezone.appendChild(image);
+        link.href = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + text;
+        link.target = "_blank";
+        imagezone.appendChild(link);
+        link.appendChild(image);
     }
 }
 
