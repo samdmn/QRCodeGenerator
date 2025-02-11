@@ -67,6 +67,11 @@
     margin-top: 30px;
 }
 
+.qrcode a {
+    width: 150px;
+    height: 150px;
+}
+
 .qrcode img:hover {
     cursor: pointer;
 }
