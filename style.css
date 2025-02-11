@@ -72,3 +72,14 @@
 .qrcode img:hover {
     cursor: pointer;
 }
+
+.generated {
+    width: 200px;
+    height: 200px;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e7803b;
+    border-radius: 10px;
+}

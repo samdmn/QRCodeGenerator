@@ -27,11 +27,37 @@ function generateQRCode(){
 }
 
 // The task is added if you left-click on the OK button
-generatebutton.addEventListener("click", generateQRCode);
+generatebutton.addEventListener("click", function (event) {
+    var text = inputbox.value;
+    if (text === ""){
+        return;
+    }
+    else if (imagezone.firstElementChild && imagezone.firstElementChild.href !== text){
+        imagezone.removeChild(imagezone.firstElementChild);
+        imagezone.className = "qrcode generated"
+        generateQRCode();
+    }
+    else {
+        imagezone.className = "qrcode generated"
+        generateQRCode();
+    }
+});
 
 // The task is added if you press enter key
 inputbox.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
-        generateQRCode();
+        var text = inputbox.value;
+        if (text === ""){
+            return;
+        }
+        else if (imagezone.firstElementChild && imagezone.firstElementChild.href !== text){
+            imagezone.removeChild(imagezone.firstElementChild);
+            imagezone.className = "qrcode generated"
+            generateQRCode();
+        }
+        else {
+            imagezone.className = "qrcode generated"
+            generateQRCode();
+        }
     }
 });
