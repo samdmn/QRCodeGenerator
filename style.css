@@ -9,6 +9,8 @@
 .container {
     background: linear-gradient(135deg, #EBB333, #E34943);
     width: 100%;
+    height: 100%;
+    min-width: 100vh;
     min-height: 100vh;
     padding: 20px;
 }
@@ -20,6 +22,10 @@
     padding: 40px 30px 70px;
     border-radius: 10px;
     background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #title {
@@ -31,15 +37,14 @@
 }
 
 .generate {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
 }
 
 #input-box {
     width: 50%;
-    max-width: 400px;
     height: 30px;
     text-indent: 10px;
     border: 1px solid black;
@@ -61,9 +66,7 @@
 }
 
 .qrcode {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 30px;
 }
 
 .qrcode img:hover {

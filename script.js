@@ -4,7 +4,7 @@ const generatebutton = document.getElementById("generate-button");
 const imagezone = document.getElementById("image-zone")
 
 // Function used to generate a QRCode thanks to goqr.me/api/
-function generate(){
+function generateQRCode(){
     var text = inputbox.value;
     var children = imagezone.childNodes;
     for (var i = 0; i < children.length; i++) {
@@ -27,11 +27,11 @@ function generate(){
 }
 
 // The task is added if you left-click on the OK button
-generatebutton.addEventListener("click", generate);
+generatebutton.addEventListener("click", generateQRCode);
 
 // The task is added if you press enter key
 inputbox.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
-        generate();
+        generateQRCode();
     }
 });
