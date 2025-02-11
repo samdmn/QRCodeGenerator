@@ -8,7 +8,7 @@ function generate(){
     var text = inputbox.value;
     var children = imagezone.childNodes;
     for (var i = 0; i < children.length; i++) {
-        if (children[i].tagName === "IMG") {
+        if (children[i].tagName === "A") {
             return;
         }
     }    
