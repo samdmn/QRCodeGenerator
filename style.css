@@ -10,7 +10,6 @@
     background: linear-gradient(135deg, #EBB333, #E34943);
     width: 100%;
     height: 100%;
-    min-width: 100vh;
     min-height: 100vh;
     padding: 20px;
 }
