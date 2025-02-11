@@ -3,7 +3,7 @@
     ·
     Français
     ·
-    <a href="https://samdmn.github.io/QRCodeGenerator/">Official site</a>
+    <a href="https://samdmn.github.io/QRCodeGenerator/" target="_blank">Official site</a>
 
 </p>
 
